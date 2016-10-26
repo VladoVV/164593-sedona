@@ -5,8 +5,147 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="main-header">
+      <img class="small-logo" src="images/Layer-60.png" width="67" height="56" alt="city sedona">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">информация</a>
+          </li>
+          <li>
+            <a href="#">фото и видео</a>
+          </li>
+          <li>
+            <a href="#">карта штата</a>
+          </li>
+          <li>
+            <a href="#">гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main class="container">
+      <img class="img-background" src="images/background-photo.png" width="768" height="512" alt="background">
+      <img class="logo" src="images/Sedona.png" width="458" height="78" alt="sedona">
+    
+      <h2 class="title">седона небольшой городок в аризоне, заслуживающий большего!</h2>
+      <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      
+      <section class="feature-img">
+        <b class="feature-img-title">настоящий городок</b>
+        <p>- №1 -</p>
+        <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <img class="feature-img-right" src="images/Layer-13.png" width="512" height="256" alt="">
+      </section>
+      
+      <section class="hints">
+        <div class="hint">
+          <img class="icon-hint" src="images/Layer-39.png" width="75" height="72" alt="">
+          <b class="hint-title">жилье</b>
+          <p class="hint-desc">рекомендуем пожить в настоящем мотеле, все как в настоящем кино!</p>
+        </div>
+        
+        <div class="hint">
+          <img class="icon-hint" src="images/Layer-40.png" width="74" height="70" alt="">
+          <b class="hint-title">еда</b>
+          <p class="hint-desc">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        
+        <div class="hint">
+          <img class="icon-hint" src="images/Layer-38.png" width="64" height="76" alt="">
+          <b class="hint-title">сувениры</b>
+          <p class="hint-desc">не только китайского, но и местного производства!</p>
+        </div>        
+      </section> <!-- end hints -->
+      
+      <section class="feature-img">
+        <img class="feature-img-left" src="images/Layer-14.png" width="512" height="256" alt="">
+        <b class="feature-img-title">там есть мост дьявола</b>
+        <p>- №2 -</p>
+        <p>да, по нему можно пройти! если конечно вы осмелитесь</p>   
+      </section>
+      
+      <section class="features">
+        <div class="features-item">
+          <b class="features-item-title">небольшая площадь</b>
+          <p>- №3 -</p>
+          <p>все достопримечательности находятся очень близко</p>
+        </div>
+        
+        <div class="features-item">
+          <b class="features-item-title">красивая дорога</b>
+          <p>- №4 -</p>
+          <p>ехать в седону из лас-вегаса совсем не кучно!</p>
+        </div>
+        
+        <div class="features-item">
+          <b class="features-item-title">мало туристов</b>
+          <p>- №5 -</p>
+          <p>большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </section> <!-- end features -->
+      
+      <b class="question">заинтересовались?</b>
+      <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      
+      <section class="form-search">
+        <button class="form-search-title">поиск гостиницы в седоне</button>
+        <form class="search" action="https://echo.htmlacademy.ru" method="post">
+          <label>
+            <p>дата заезда:</p> 
+            <input type="text" name="date-arrival" value="24 апреля 2016"> 
+            <img class="calend" src="images/%EE%A0%80.png" width="21" height="22" alt="calend">
+          </label>
+          <label>
+            <p>дата выезда:</p> 
+            <input type="text" name="date-departure" value="4 июля 2016"> 
+            <img class="calend" src="images/%EE%A0%80.png" width="21" height="22" alt="calend">
+          </label>
+          <label>
+            <p>взрослые:</p>
+            <img class="minus" src="images/%EE%A0%82.png" width="12" height="3" alt="minus">
+            <input type="text" name="adults" value="2">
+            <img class="plus" src="images/%EE%A0%81.png" width="11" height="11" alt="plus">
+          </label>
+          <label>
+            <p>дети:</p>
+            <img class="minus" src="images/%EE%A0%82.png" width="12" height="3" alt="minus">
+            <input type="text" name="children" value="0">
+            <img class="plus" src="images/%EE%A0%81.png" width="11" height="11" alt="plus">
+          </label>
+          <button class="btn" type="submit" >найти</button> 
+        </form>
+        
+      </section><!-- end form-search -->
+    <img class="map" src="images/map.png" width="768" height="593" alt="map">
+    </main>
+    
+    <footer class="main-footer">
+      <div class="wrap-main-footer">
+        <div class="tag">
+         <p>#visitsedona</p>
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">
+            <img class="icon" src="images/t.png" width="17" height="15" alt="twitter">
+          </a>
+          <a class="social-btn social-btn-fb" href="#">
+            <img class="icon" src="images/f.png" width="10" height="19" alt="facebook">
+          </a>
+          <a class="social-btn social-btn-yt" href="#">
+            <img class="icon" src="images/%EF%8E%9E.png" width="20" height="16" alt="youtube">
+          </a>
+        </div>
+        <div class="copyright">
+          <p>website by
+            <a class="btn" href="https://htmlacademy.ru">
+              <img class="logo-copyright" src="images/%D0%A1%D0%BB%D0%BE%D0%B9-3.png" width="113" height="39" alt="logo-copyright">
+            </a>
+          </p>
+        </div>
+      </div> <!-- end wrap-main-footer -->
+    </footer>
 
   </body>
 </html>
