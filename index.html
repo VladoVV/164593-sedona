@@ -92,28 +92,32 @@
       <section class="form-search">
         <button class="form-search-title">поиск гостиницы в седоне</button>
         <form class="search" action="https://echo.htmlacademy.ru" method="post">
-          <label>
+          <label for="arrival">
             <p>дата заезда:</p> 
-            <input type="text" name="date-arrival" value="24 апреля 2016"> 
+          </label>  
+            <input id="arrival" type="text" name="date-arrival" value="24 апреля 2016"> 
             <img class="calend" src="images/%EE%A0%80.png" width="21" height="22" alt="calend">
-          </label>
-          <label>
+          
+          <label for="departure">
             <p>дата выезда:</p> 
-            <input type="text" name="date-departure" value="4 июля 2016"> 
+          </label>
+            <input id="departure" type="text" name="date-departure" value="4 июля 2016"> 
             <img class="calend" src="images/%EE%A0%80.png" width="21" height="22" alt="calend">
-          </label>
-          <label>
+          
+          <label for="id-adults">
             <p>взрослые:</p>
+          </label>  
             <img class="minus" src="images/%EE%A0%82.png" width="12" height="3" alt="minus">
-            <input type="text" name="adults" value="2">
+            <input id="id-adults" type="text" name="adults" value="2">
             <img class="plus" src="images/%EE%A0%81.png" width="11" height="11" alt="plus">
-          </label>
-          <label>
+          
+          <label for="id-children">
             <p>дети:</p>
+          </label>  
             <img class="minus" src="images/%EE%A0%82.png" width="12" height="3" alt="minus">
-            <input type="text" name="children" value="0">
+            <input id="id-children" type="text" name="children" value="0">
             <img class="plus" src="images/%EE%A0%81.png" width="11" height="11" alt="plus">
-          </label>
+          
           <button class="btn" type="submit" >найти</button> 
         </form>
         
@@ -122,7 +126,7 @@
     </main>
     
     <footer class="main-footer">
-      <div class="wrap-main-footer">
+      
         <div class="tag">
          <p>#visitsedona</p>
         </div>
@@ -144,7 +148,7 @@
             </a>
           </p>
         </div>
-      </div> <!-- end wrap-main-footer -->
+      
     </footer>
 
   </body>
