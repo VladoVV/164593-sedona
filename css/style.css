@@ -1,0 +1,16 @@
+body {
+  font: 400 14px PTSans;
+  line-height: 21px;
+  color: #333333;
+}
+
+h2 {
+  font: 700 21px PTSans;
+  line-height: 26px;
+  color: #000000;
+}
+b {
+  font: 700 21px PTSans;
+  line-height: 21px;
+  color: #ffffff;
+}
