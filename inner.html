@@ -32,7 +32,7 @@
     <main class="container">
       <img class="img-background" src="img/background-filter.png" width="768" height="200" alt="background">
       
-      <form class="filter" action="https://echo.htmlacademy.ru" method="post">
+      <form class="filter clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-left">
           <b class="filter-text">инфраструктура</b>
           <label>          
@@ -61,10 +61,10 @@
         
         <div class="filter-right">
           <b class="filter-text">стоимость в сутки (р):</b>
-          <label>
+          <label class="price-from">
             от <input type="text" name="price-from" value="0">
           </label>
-          <label>
+          <label class="price-to">
             до <input type="text" name="price-to" value="3000">
           </label>
           
@@ -73,8 +73,9 @@
         <button class="btn" type="submit" ><a class="btn" href="#">показать</a></button>
       </form>
       <section class="wrap-result">
-        <b>найдено</b>
-        <p>сортировка</p>
+        <div class="wrap-result-filtr clearfix">
+        <b class="">найдено 3</b>
+        <p class="">сортировка</p>
         <ul>
           <li><a href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
@@ -87,6 +88,7 @@
         <a href="#">
           <img class="arrow" src="img/arrow-down.png" width="11" height="10" alt="arrow-down">
         </a>
+        </div>
         
         <div class="list-result">
           
@@ -107,7 +109,7 @@
             </div>  
           </article>
 
-          <article class="result">
+          <article class="result clearfix">
             <img class="result-img" src="img/result-img2.jpg" width="135" height="90" alt="second result">
 
             <div class="center-side">

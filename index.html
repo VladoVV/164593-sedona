@@ -6,9 +6,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header ">
       <img class="small-logo" src="img/logo.png" width="138" height="70" alt="city sedona">
-      <nav class="main-navigation">
+      <nav class="main-navigation clearfix">
         <ul>
           <li>
             <a href="#">информация</a>
@@ -24,6 +24,7 @@
           </li>
         </ul>
       </nav>
+      
     </header>
     
     <main class="container">
@@ -32,11 +33,13 @@
       <h2 class="title">седона небольшой городок в аризоне, заслуживающий большего!</h2>
       <p>рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
       
-      <section class="feature-img">
-        <b class="feature-img-title">настоящий городок</b>
-        <p>- №1 -</p>
-        <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
-        <img class="feature-img-right" src="img/feature-img1.jpg" width="512" height="256" alt="">
+      <section class="feature-img clearfix">
+        <div class="left">
+          <b class="feature-img-title">настоящий городок</b>
+          <p>- №1 -</p>
+          <p>седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+          <img class="feature-img-right" src="img/feature-img1.jpg" width="512" height="256" alt="">
       </section>
       
       <section class="hints">
@@ -59,14 +62,17 @@
         </div>        
       </section> <!-- end hints -->
       
-      <section class="feature-img">
+      <section class="feature-img clearfix">
         <img class="feature-img-left" src="img/feature-img2.jpg" width="512" height="256" alt="">
-        <b class="feature-img-title">там есть мост дьявола</b>
-        <p>- №2 -</p>
-        <p>да, по нему можно пройти! если конечно вы осмелитесь</p>   
+        <div class="right">
+          <b class="feature-img-title">там есть мост дьявола</b>
+          <p>- №2 -</p>
+          <p>да, по нему можно пройти! если конечно вы осмелитесь</p>
+        </div>
       </section>
       
       <section class="features">
+        
         <div class="features-item">
           <b class="features-item-title">небольшая площадь</b>
           <p>- №3 -</p>
@@ -118,15 +124,14 @@
             <input id="id-children" type="text" name="children" value="0">
             <img class="plus" src="img/plus.png" width="11" height="11" alt="plus">
           
-          <button class="btn" type="submit" >найти</button> 
+          <button class="btn submit" type="submit" >найти</button> 
         </form>
         
       </section><!-- end form-search -->
     <img class="map" src="img/map.jpg" width="768" height="593" alt="map">
     </main>
     
-    <footer class="main-footer">
-      
+    <footer class="main-footer clearfix">
         <div class="tag">
          <p>#visitsedona</p>
         </div>
@@ -148,7 +153,6 @@
             </a>
           </p>
         </div>
-      
     </footer>
 
   </body>
