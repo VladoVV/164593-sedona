@@ -2,6 +2,7 @@ body {
   font: 400 14px PTSans;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
 .clearfix::after {
@@ -29,6 +30,10 @@ b {
   text-align: center;
 }
 
+.main-navigation ul {
+  font-size: 0;
+}
+
 .main-navigation ul,
 .main-navigation li {
   display: inline-block;
@@ -36,6 +41,10 @@ b {
   padding: 0;
   text-align: left;
   list-style: none;
+}
+
+.main-navigation li {
+  font-size: 14px;
 }
 
 .main-navigation li:nth-child(4),
@@ -151,14 +160,14 @@ label {
 }
 
 input {
-  width: 346px;
+  width: 55%;
 }
 
-#id-adults {
+.id-adult {
   width: 114px;
 }
 
-#id-children {
+.id-children {
   width: 114px;
 }
 
@@ -214,10 +223,20 @@ input {
   margin-left: 46px; 
 }
 
+.filter-left,
+.filter-center,
+.filter-right {
+  font-size: 0;
+}
+
 main label {
   display: inline-block;
   vertical-align: top;
   height: 40px;
+  font-size: 14px;
+}
+main label input {
+  font-size: 14px;
 }
 
 .filter-center {
@@ -234,10 +253,6 @@ main label {
 
 }
 
-.filter-right label {
-  display: inline-block;
-  width: 50px;
-}
 
 form {
   margin-bottom: 30px;
@@ -280,4 +295,17 @@ form {
   display: inline-block;
   margin-right: 46px;
   width: 112px;
+}
+
+.filter-text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.filter input {
+  width: auto;
+}
+
+.filter-right input {
+  width: 60%;
 }
