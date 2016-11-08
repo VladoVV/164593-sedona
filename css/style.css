@@ -321,9 +321,11 @@ input {
   line-height: 120px;
   width: 33%;
 }
+
 .copyright p {
   margin: 0;
 }
+
 .copyright img {
   vertical-align: middle;
 }
@@ -357,12 +359,30 @@ input {
   margin-right: 0px;
 }
 
+.filter {
+  
+  position: absolute;
+  top: 88px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.filter-text {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: left;
+}
+
 .filter-left {
   float: left;
-  width: 153px;
+  width: 160px;
   margin-left: 46px; 
 }
 
+.chekbox {
+  display: inline;
+  margin-left: 0;
+}
 .filter-left,
 .filter-center,
 .filter-right {
@@ -370,29 +390,24 @@ input {
 }
 
 main label {
-  display: inline-block;
   vertical-align: top;
   height: 40px;
-  font-size: 14px;
-}
-main label input {
   font-size: 14px;
 }
 
 .filter-center {
   float: left; 
   width: 153px;
-  margin-left: 89px; 
+  margin-left: 79px; 
 }
 
 .filter-right {
   float: right;
-  width: 226px;
+  width: 206px;
   margin-right: 46px;
   margin-bottom: 55px;
 
 }
-
 
 form {
   margin-bottom: 30px;
