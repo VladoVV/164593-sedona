@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -30,32 +32,33 @@
     </header>
     
     <main class="container">
+      
       <img class="img-background" src="img/background-filter.png" width="768" height="200" alt="background">
       
       <form class="filter clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-left">
           <b class="filter-text">инфраструктура</b>
           <label>          
-            <input type="checkbox" name="pool" checked>бассейн
+            <input class="chekbox" type="checkbox" name="pool" checked>бассейн
           </label>
           <label>          
-            <input type="checkbox" name="parking">парковка
+            <input class="chekbox" type="checkbox" name="parking">парковка
           </label>
           <label>          
-            <input type="checkbox" name="wi-fi">wi-fi
+            <input class="chekbox" type="checkbox" name="wi-fi">wi-fi
           </label>
         </div> <!--end filter-left -->
         
         <div class="filter-center">
           <b class="filter-text">тип жилья:</b>
           <label>          
-            <input type="checkbox" name="hotel" checked>гостинница
+            <input class="chekbox" type="checkbox" name="hotel" checked>гостинница
           </label>
           <label>          
-            <input type="checkbox" name="motel" checked>мотель
+            <input class="chekbox" type="checkbox" name="motel" checked>мотель
           </label>
           <label>          
-            <input type="checkbox" name="apartments" checked>апартаменты
+            <input class="chekbox" type="checkbox" name="apartments" checked>апартаменты
           </label>
         </div> <!--end filter-center -->
         
@@ -145,7 +148,7 @@
         
         </div> <!--end list-result -->
       </section>
-      
+     
     </main>
     
     <footer class="main-footer">
@@ -155,13 +158,13 @@
         </div>
         <div class="footer-social">
           <a class="social-btn social-btn-tw" href="#">
-            <img class="icon" src="img/tw.png" width="17" height="15" alt="twitter">
+            <i class="sprite sprite-tw"></i>
           </a>
           <a class="social-btn social-btn-fb" href="#">
-            <img class="icon" src="img/fb.png" width="10" height="19" alt="facebook">
+            <i class="sprite sprite-fb"></i>
           </a>
           <a class="social-btn social-btn-yt" href="#">
-            <img class="icon" src="img/yt.png" width="20" height="16" alt="youtube">
+            <i class="sprite sprite-yt"></i>
           </a>
         </div>
         <div class="copyright">
