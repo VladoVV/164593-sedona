@@ -545,28 +545,44 @@ form {
 
 .arrowup::before {
   content: "";
-  width: 11px;
-  height: 10px;
   display: inline-block;
-  background-image: url(/img/sprite.png);
-  background-position: -26px -5px;
-  
+  border-bottom: 10px solid #cccccc;
+  border-left: 6px solid transparent;
+  border-right:6px solid transparent;
   margin-top: 8px;
   position: absolute;
   right: 70px;
 }
 
+.arrowup:hover::before {
+  border-bottom: 10px solid #000000;
+}
+
+.arrowup:active::before {
+  border-bottom: 10px solid #81b3d2;
+}
+
 .arrowdown::before {
   content: " ";
-  width: 11px;
-  height: 10px;
   display: inline-block;
-  background-image: url(/img/sprite.png);
-  background-position: -5px -5px;
+  border-top: 10px solid #81b3d2;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   margin-top: 8px;
   position: absolute;
-  right: 46px;
-  
+  right: 46px; 
+}
+
+.arrowdown:hover::before {
+  border-top: 10px solid #000000;
+}
+
+.arrowdown:active::before {
+  border-top: 10px solid #81b3d2;
+}
+/* ??? как правильно селектор задать для .active no hovers   */
+.arrowdown::before .activenohovers  {
+  border-top: 10px solid #81b3d2;
 }
 
 article {
