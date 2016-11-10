@@ -588,8 +588,8 @@ form {
 article {
   padding-top: 30px;
   padding-left: 46px;
-  text-align: left
-  
+  text-align: left;
+  margin-bottom: 30px; 
 } 
 
 .result-img {
