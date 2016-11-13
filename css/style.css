@@ -33,6 +33,7 @@ b {
   
   width: 768px;
   margin: 0 auto;
+  z-index: 1;
 }
 
 .main-navigation ul {
@@ -78,6 +79,22 @@ b {
   color: #81b3d2;
 }
 
+.main-navigation li a:active {
+  color: #b2b2b2;
+}
+
+.main-navigation a.active {
+  color: #766357;
+}
+
+.main-navigation a.active:hover {
+  color: #604e43;
+}
+
+.main-navigation a.active:active {
+  color: #f4f2f1;
+}
+
 .small-logo {
   position: absolute;
   top: 0;
@@ -88,12 +105,30 @@ b {
 .container {
   width: 768px;
   margin: 0 auto;
-  
+  position: relative;
   text-align: center;
 }
 
 .img-background {
   margin-bottom: 54px;
+}
+
+.triangle {
+  position: absolute;
+  top: 474px;
+  left: 160px;
+  border-left: 225px solid white;
+  border-right: 225px solid white;
+  border-top: 38px solid transparent;
+}
+
+.triangle2 {
+  position: absolute;
+  top: 474px;
+  left: 0px;
+  border-left: 385px solid white;
+  border-right: 385px solid white;
+  border-top: 38px solid transparent;
 }
 
 .title {
@@ -266,7 +301,6 @@ b {
   width: 568px;
   margin: 0 auto;
   background-color: #ffffff;
-  background
 }
 
 .form-search-title {
@@ -280,40 +314,130 @@ b {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #766357;
+}
+
+.search label {
+  display: inline-block;
+  min-width: 95px;
+  text-align: left;
+  margin-left: 56px;
+  margin-top: -8px;
   
 }
 
-label {
-  display: inline-block;
+.search p {
   line-height: 26px;
-  vertical-align: middle;
-  width: 112px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-input {
-  width: 55%;
-  height: 40px;
+.calend {
+  position: absolute;
+  top: 8px;
+  right: 9px;
+}
+
+.minus {
+  position: absolute;
+  top: 20px;
+  left: 167px;
+}
+
+.plus {
+  position: absolute;
+  top: 14px;
+  left: 247px;
+}
+
+.child .plus {
+  left: 210px;
+}
+
+.child .minus {
+  left: 130px;
+}
+
+.search input {
+  width: 294px;
+  height: 20px;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  font: inherit;
+  line-height: inherit;
+  text-transform: inherit;
+  font-weight: 700;
+  padding: 7px 12px;
+  padding-right: 40px;
   margin-bottom: 29px;
 }
 
-.id-adult {
-  width: 114px;
+.search input:hover {
+  background-color: #ebebeb;
 }
 
-.id-children {
-  width: 114px;
+.search input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  height: 20px;
+}
+
+.search .adults input,
+.search .child input {
+  padding-left: 38px;
+  padding-right: 38px;
+  text-align: center;
+}
+.arrivals,
+.departure,
+.adults,
+.child {
+  float: left;
+  position: relative;
+}
+
+.search .child label  {
+  margin-left: 52px;
+  padding-left: 0px;
+  margin-right: 25px;
+  min-width: auto;
+
+}
+
+input.id-adult {
+  width: 38px;
+}
+
+input.id-children {
+  width: 38px;
 }
 
 .submit {
-  
-  width: 458px;
-  height: 60px;
   padding: 15px 194px;
+  margin-right: 0px;
+  margin-top: 26px;
   margin-bottom: 56px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+}
+
+.submit:hover {
+  background-color: #669ec0;
+}
+
+.submit:active {
+  background-color: #5496bd;
+  color: #88b6d1;
 }
 
 .map {
-  margin-top: -425px;
+  margin-top: -421px;
 }
 
 .main-footer {
@@ -379,6 +503,14 @@ input {
   margin-right: 6px;
 }
 
+.social-btn:hover {
+  background-color: #669ec0;
+}
+
+.social-btn:active {
+  background-color: #5496bd;
+}
+
 .social-btn::before {
   content: "";
   position: absolute;
@@ -387,6 +519,10 @@ input {
   transform: translate(-50%, -50%);
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+}
+
+.social-btn:active::before {
+  opacity: 0.3;
 }
 
 .social-btn-tw::before {
@@ -437,10 +573,11 @@ input {
   background-image: url(../img/background-filter.png);
 }
 
-.filter-text {
+.filter b {
   font-size: 16px;
   color: #ffffff;
   text-align: left;
+  margin-bottom: 29px;
 }
 
 .filter-left {
@@ -449,10 +586,70 @@ input {
   margin-left: 46px; 
 }
 
-.chekbox {
-  display: inline;
-  margin-left: 0;
+.checkbox {
+  display: block;
+  position: relative;
+  height: 22px;
+  vertical-align: top;
+  margin-bottom: 24px;
+  padding-left: 40px;
+  text-align: left;
+  cursor: pointer;
 }
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"]  + .checkbox-indicator {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 19px;
+  height: 19px;
+
+  border: 3px solid #ffffff;
+  border-radius: 6px;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  
+  width: 20px;
+  height: 6px;
+  
+  background-color: #ffffff;
+  border-radius: 1px;
+  box-shadow: 0px 2px 5px 0px #599cd4,
+              0px -2px 5px 0px #599cd4;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
+  content: "";
+  position: absolute;
+  top:7px;
+  left: 1px;
+  
+  width: 13px;
+  height: 6px;
+  
+  background-color: #ffffff;
+  border-radius: 1px;
+} 
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(-45deg);
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(45deg);
+}
+/* вопрос как указать свойства checkbox disabled (из стайлгайда) с галочкой и без галочки? */
+
 .filter-left,
 .filter-center,
 .filter-right {
@@ -461,7 +658,6 @@ input {
 
 main label {
   vertical-align: top;
-  height: 40px;
   font-size: 14px;
 }
 
@@ -473,10 +669,114 @@ main label {
 
 .filter-right {
   float: right;
-  width: 206px;
+  width: 225px;
   margin-right: 46px;
-  margin-bottom: 55px;
+  margin-bottom: 33px;
+}
+.filter-right .filter-text {
+  margin-bottom: 12px;
+  line-height: 21px
+}
 
+.price-controls {
+  position: relative;
+  height: 36px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  
+  background: #ffffff;
+}
+
+.filter-right label {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-left: 34px;
+  line-height: 36px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.price-controls input {
+  margin: 0px;
+  margin-top: -2px;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font: inherit;  
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.scale { 
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bar {
+  height: 2px;
+  width: 160px;
+  background-color: #ffffff;
+}
+
+.range-switch {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-switch:hover {
+  background-color: #1c4f80;
+}
+
+.range-swith-min {
+  top: -9px;
+}
+
+.range-switch-max {
+  top: -9px;
+  left: 70%;
+}
+
+.filter-right button {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 8px 34px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+}
+
+.filter-right button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
 
 form {
@@ -548,7 +848,7 @@ form {
   display: inline-block;
   border-bottom: 10px solid #cccccc;
   border-left: 6px solid transparent;
-  border-right:6px solid transparent;
+  border-right: 6px solid transparent;
   margin-top: 8px;
   position: absolute;
   right: 70px;
@@ -556,6 +856,11 @@ form {
 
 .arrowup:hover::before {
   border-bottom: 10px solid #000000;
+}
+
+/* вопрос как записывать arrow active no hovers  так: */
+.arrowup.active::before {
+  border-bottom: 10px solid #81b3d2;
 }
 
 .arrowup:active::before {
@@ -571,6 +876,10 @@ form {
   margin-top: 8px;
   position: absolute;
   right: 46px; 
+}
+/* вопрос как записывать arrow active no hovers  так: */
+.arrowdown.active::before {
+  border-top: 10px solid #81b3d2;
 }
 
 .arrowdown:hover::before {
@@ -606,11 +915,25 @@ article {
 }
 
 h2.result-title {
+  margin: 0;
+  padding: 0;
+}
+
+h2.result-title a{
   display: block;
   text-align: left;
-  margin-top: -6px;
+  margin-top: -5px;
   margin-left: 30px;
   margin-bottom: 10px;
+  color: #000000;
+}
+
+h2.result-title a:hover {
+  color: #81b3d2;
+}
+
+h2.result-title a:active {
+  color: #cacaca;
 }
 
 .center-side p {
@@ -634,6 +957,15 @@ h2.result-title {
   color: #ffffff;
 }
 
+.btn-more:hover {
+  background-color: #669ec0;
+}
+
+.btn-more:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
 .center-side a {
   margin-right: 0;
 }
@@ -646,8 +978,16 @@ h2.result-title {
   color: #ffffff;
 }
 
+.btn-book:hover {
+  background-color: #604e43;
+}
+
+.btn-book:active {
+  background-color: #503e33;
+  color: #7e7169;
+}
+
 .right-side {
-  
   display: inline-block;
   vertical-align: top;
   text-align: right;
