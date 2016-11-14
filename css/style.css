@@ -333,20 +333,63 @@ b {
 
 .calend {
   position: absolute;
-  top: 8px;
+  top: 7px;
   right: 9px;
+  background-image: url(../img/sprite2.png);
+  width: 21px;
+  height: 22px;
+  background-position: -128px -5px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.calend:hover {
+  background-position: -190px -5px;
+}
+
+.calend:active {
+  background-position: -159px -5px;
 }
 
 .minus {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 167px;
+  display: block;
+  background-image: url(../img/sprite2.png);
+  width: 12px;
+  height: 3px;
+  background-position: -184px -85px;
+  
+  cursor: pointer;
+}
+
+.minus:hover {
+  background-position: -287px -98px;
+}
+
+.minus:active {
+  background-position: -287px -85px;
 }
 
 .plus {
   position: absolute;
   top: 14px;
   left: 247px;
+  display: block;
+  background-image: url(../img/sprite2.png);
+  width: 11px;
+  height: 11px;
+  background-position: -287px -111px;
+  cursor: pointer;
+}
+
+.plus:hover {
+  background-position: -5px -153px;
+}
+
+.plus:active {
+  background-position: -287px -132px;
 }
 
 .child .plus {
@@ -387,6 +430,7 @@ b {
   padding-right: 38px;
   text-align: center;
 }
+
 .arrivals,
 .departure,
 .adults,
@@ -400,7 +444,6 @@ b {
   padding-left: 0px;
   margin-right: 25px;
   min-width: auto;
-
 }
 
 input.id-adult {
@@ -469,18 +512,42 @@ input.id-children {
 
 .copyright {
   float: right;
-  text-align: center;
+  text-align: left;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 33%;
 }
+.copyright a {
+  margin-left: 4px;
+}
 
 .copyright p {
   margin: 0;
+  position: relative;
+  padding-left: 27px;
+  padding-right: 20px;
 }
 
-.copyright img {
+.copylogo {
   vertical-align: middle;
+  background-image: url("../img/sprite2.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 115px;
+  height: 39px;
+  background-position: -5px -5px;
+}
+
+.copylogo:hover {
+  width: 115px;
+  height: 39px;
+  background-position: -5px -102px;
+}
+
+.copylogo:active {
+  width: 115px;
+  height: 39px;
+  background-position: -5px -53px;
 }
 
 .footer-social {
@@ -517,7 +584,7 @@ input.id-children {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("../img/sprite.png");
+  background-image: url("../img/sprite2.png");
   background-repeat: no-repeat;
 }
 
@@ -528,41 +595,23 @@ input.id-children {
 .social-btn-tw::before {
   width: 17px;
   height: 15px;
-  background-position: -169px -5px;
+  background-position: -54px -153px;
 }
 
 .social-btn-fb::before {
   width: 10px;
   height: 19px;
-  background-position: -78px -5px;
+  background-position: -164px -69px;
 }
 
 .social-btn-yt::before {
   width: 20px;
   height: 16px;
-  background-position: -196px -5px;
+  background-position: -81px -171px;
 }
 
 .social-btn:nth-child(3) {
   margin-right: 0px;
-}
-
-.sprite-fb {
-    width: 10px;
-    height: 19px;
-    background-position: -78px -5px;
-}
-
-.sprite-tw {
-    width: 17px;
-    height: 15px;
-    background-position: -169px -5px;
-}
-
-.sprite-yt {
-    width: 20px;
-    height: 16px;
-    background-position: -196px -5px;
 }
 
 .filter {
@@ -994,6 +1043,7 @@ h2.result-title a:active {
   
   width: 115px;
 }
+
 img.rating-img {
   display: inline-block;
   margin-left: 7px;
@@ -1021,40 +1071,4 @@ p.rating {
 }
 
 
-
-.sprite-arrow-down {
-    width: 11px;
-    height: 10px;
-    background-position: -5px -5px;
-}
-
-.sprite-arrow-up {
-    width: 11px;
-    height: 10px;
-    background-position: -26px -5px;
-}
-
-.sprite-calend {
-    width: 21px;
-    height: 22px;
-    background-position: -47px -5px;
-}
-
-.sprite-minus {
-    width: 12px;
-    height: 3px;
-    background-position: -98px -5px;
-}
-
-.sprite-plus {
-    width: 11px;
-    height: 11px;
-    background-position: -120px -5px;
-}
-
-.sprite-rating {
-    width: 18px;
-    height: 17px;
-    background-position: -141px -5px;
-}
 
