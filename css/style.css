@@ -381,8 +381,8 @@ b {
 
 .minus {
   position: absolute;
-  top: 18px;
-  left: 167px;
+  top: 19px;
+  left: 180px;
   display: block;
   background-image: url(../img/sprite2.png);
   width: 12px;
@@ -402,8 +402,8 @@ b {
 
 .plus {
   position: absolute;
-  top: 14px;
-  left: 247px;
+  top: 15px;
+  left: 256px;
   display: block;
   background-image: url(../img/sprite2.png);
   width: 11px;
@@ -421,7 +421,7 @@ b {
 }
 
 .child .plus {
-  left: 210px;
+  left: 207px;
 }
 
 .child .minus {
@@ -455,6 +455,7 @@ b {
 
 .search .adults input,
 .search .child input {
+  margin-top: 1px;
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
@@ -468,25 +469,33 @@ b {
   position: relative;
 }
 
-.search .child label  {
+.child label  {
+  margin-top: 7px;
   margin-left: 52px;
   padding-left: 0px;
-  margin-right: 25px;
+  margin-right: 8px;
   min-width: auto;
 }
 
+.adults label {
+  margin-top: 7px;
+}
+
 input.id-adult {
-  width: 38px;
+  width: 35px;
+  margin-left: 13px;
 }
 
 input.id-children {
-  width: 38px;
+  width: 35px;
+  margin-left: 14px;
+  
 }
 
 .submit {
-  padding: 15px 194px;
+  padding: 17px 195px 17px;
   margin-right: 0px;
-  margin-top: 26px;
+  margin-top: 25px;
   margin-bottom: 56px;
   background-color: #81b3d2;
   color: #ffffff;
@@ -509,7 +518,7 @@ input.id-children {
 }
 
 .map {
-  margin-top: -419px;
+  margin-top: -426px;
 }
 
 .main-footer {
@@ -522,19 +531,19 @@ input.id-children {
 }
 
 .footer-index {
-  margin-top: -120px;
+  margin-top: -126px;
 }
 
 .tag {
   float: left;
   text-align: center;
-  width: 33%;
+  width: 256px;
   font-size: 21px;
 }
 
 .tag p {
   margin-top: 0;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 50px;
 
 }
@@ -544,7 +553,7 @@ input.id-children {
   text-align: left;
   padding-top: 40px;
   padding-bottom: 40px;
-  width: 33%;
+  width: 256px;
 }
 .copyright a {
   margin-left: 4px;
@@ -552,8 +561,9 @@ input.id-children {
 
 .copyright p {
   margin: 0;
+  margin-top: 1px;
   position: relative;
-  padding-left: 27px;
+  padding-left: 30px;
   padding-right: 20px;
 }
 
@@ -582,9 +592,9 @@ input.id-children {
 .footer-social {
   float: left;
   text-align: center;
-  padding-top: 35px;
+  padding-top: 36px;
   padding-bottom: 35px;
-  width: 33%;
+  width: 256px;
   font-size: 0;
 }
 
@@ -597,6 +607,11 @@ input.id-children {
   background-color: #7FB1D0;
   position: relative;
   margin-right: 6px;
+  
+}
+
+.social-btn:nth-child(1) {
+  margin-left: -2px;
 }
 
 .social-btn:hover {
