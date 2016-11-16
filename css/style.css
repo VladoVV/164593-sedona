@@ -109,26 +109,17 @@ b {
   text-align: center;
 }
 
+.triangle::before {
+  content: "";
+  position: absolute;
+  top: 476px;
+  width: 768px;
+  height: 37px;
+  background-image: url(../img/white.png);
+}
+
 .img-background {
   margin-bottom: 54px;
-}
-
-.triangle {
-  position: absolute;
-  top: 474px;
-  left: 160px;
-  border-left: 225px solid white;
-  border-right: 225px solid white;
-  border-top: 38px solid transparent;
-}
-
-.triangle2 {
-  position: absolute;
-  top: 474px;
-  left: 0px;
-  border-left: 385px solid white;
-  border-right: 385px solid white;
-  border-top: 38px solid transparent;
 }
 
 .title {
@@ -319,13 +310,10 @@ b {
 .search label {
   display: inline-block;
   min-width: 95px;
-  text-align: left;
-  margin-left: 56px;
-  margin-top: -8px;
   
-}
-
-.search p {
+  margin-left: 56px;
+  margin-top: 9px;
+  text-align: left;
   line-height: 26px;
   font-size: 14px;
   font-weight: 700;
@@ -541,13 +529,13 @@ input.id-children {
 .copylogo:hover {
   width: 115px;
   height: 39px;
-  background-position: -5px -102px;
+  background-position: -5px -103px;
 }
 
 .copylogo:active {
   width: 115px;
   height: 39px;
-  background-position: -5px -53px;
+  background-position: -5px -54px;
 }
 
 .footer-social {
@@ -652,51 +640,30 @@ input.id-children {
 
 .checkbox input[type="checkbox"]  + .checkbox-indicator {
   position: absolute;
-  top: -2px;
-  left: 0;
+  display: block;
+  top: 0px;
+  left: 0px;
 
-  width: 19px;
-  height: 19px;
+  width: 23px;
+  height: 23px;
 
-  border: 3px solid #ffffff;
-  border-radius: 6px;
+  background-image: url(../img/sprite2.png);
+  background-position: -128px -37px;
 }
 
 .checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
   position: absolute;
-  top: 4px;
-  left: 6px;
+  top: 0px;
+  left: 0px;
   
-  width: 20px;
-  height: 6px;
-  
-  background-color: #ffffff;
-  border-radius: 1px;
-  box-shadow: 0px 2px 5px 0px #599cd4,
-              0px -2px 5px 0px #599cd4;
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/sprite2.png);
+  background-position: -160px -37px;
 }
 
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after{
-  content: "";
-  position: absolute;
-  top:7px;
-  left: 1px;
-  
-  width: 13px;
-  height: 6px;
-  
-  background-color: #ffffff;
-  border-radius: 1px;
-} 
-
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  transform: rotate(-45deg);
-}
-
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
-  transform: rotate(45deg);
-}
 /* вопрос как указать свойства checkbox disabled (из стайлгайда) с галочкой и без галочки? */
 
 .filter-left,
@@ -1069,6 +1036,3 @@ p.rating {
 .filter-right input {
   width: 60%;
 }
-
-
-
