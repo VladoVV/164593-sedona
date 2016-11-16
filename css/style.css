@@ -30,7 +30,6 @@ b {
 
 .main-header {
   position: relative;
-  
   width: 768px;
   margin: 0 auto;
   z-index: 1;
@@ -50,7 +49,7 @@ b {
 
 .main-navigation li {
   font-size: 14px;
-  padding-top: 16px;
+  padding-top: 14px;
   padding-bottom: 16px;
 }
 
@@ -61,10 +60,10 @@ b {
   margin-left: 60px;
 }
 .main-navigation li:nth-child(3) {
-  margin-left: 184px;
+  margin-left: 182px;
 }
 .main-navigation li:nth-child(4) {
-  margin-left: 74px;
+  margin-left: 78px;
 }
 
 .main-navigation li a {
@@ -119,17 +118,18 @@ b {
 }
 
 .img-background {
-  margin-bottom: 54px;
+  margin-bottom: 50px;
 }
 
 .title {
   text-align: center;
   width: 450px;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 31px auto;
 }
 
 .title + p {
-  margin-bottom: 50px;
+  margin-bottom: 52px;
+  letter-spacing: 0.04pt;
 }
 
 .feature-img-right {
@@ -140,16 +140,24 @@ b {
   float: left;
   width: 33%;
   height: 208px;
-  padding-top: 48px;
+  padding-top: 47px;
   color: #ffffff;
 }
 
 .left p {
   width: 186px;
+  margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
-  
 }
+
+.left p:nth-child(3) {
+  width: 186px;
+  margin-top: 21px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .left b {
   display: block;
   margin-left: auto;
@@ -165,16 +173,16 @@ b {
 
 .hints {
   font-size: 0px;
-  margin-bottom: 64px;
-  
+  margin-bottom: 47px;  
 }
 
 .hint {
-  font-size: 14px;
+  font-size: 0px;
   display: inline-block;
-  width: 33%;
+  width: 256px;
   vertical-align: top;
 }
+
 .hint:nth-child(1)::before {
   content: "";
   display: block;
@@ -182,7 +190,7 @@ b {
   background: url("../img/hint1.png") no-repeat;
   width: 75px;
   height: 72px;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
 }
 
 .hint:nth-child(2)::before {
@@ -192,7 +200,7 @@ b {
   background: url("../img/hint2.png") no-repeat;
   width: 74px;
   height: 70px;
-  margin-bottom: 28px;  
+  margin-bottom: 31px;  
 }
 
 .hint:nth-child(3)::before {
@@ -202,11 +210,21 @@ b {
   background: url("../img/hint3.png") no-repeat;
   width: 64px;
   height: 76px;
+  margin-top: -4px;
   margin-bottom: 28px;  
 }
 
 .hint p {
-  width: 170px;
+  width: 160px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+}
+
+.hint:nth-child(3) p {
+  width: 165px;
+  margin-top: 17px;
   margin-left: auto;
   margin-right: auto;
 }
