@@ -237,23 +237,28 @@ b {
 
 .right {
   float: right;
-  width: 33%;
+  width: 256px;
   height: 208px;
   padding-top: 48px;
   color: #ffffff;
 }
 
 .right p {
-  width: 186px;
+  width: 170px;
   margin-left: auto;
   margin-right: auto;
-  
+  margin-top: 23px;
 }
+
+.right p:nth-child(3) {
+  margin-top: 21px;
+} 
+
 .right b {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 186px;
+  width: 151px;
   color: #ffffff;
 }
 
@@ -264,21 +269,22 @@ b {
 .features {
   font-size: 0px;
   margin-top: -60px;
-  margin-bottom: 58px;
-  padding-top: 50px;
+  margin-bottom: 57px;
+  padding-top: 47px;
   background-color: #eeeeee;
 }
 
 .features-item {
   display: inline-block;
-  width: 33%;
+  width: 256px;
   vertical-align: top;
-  padding-bottom: 30px;
+  padding-bottom: 17px;
   font-size: 14px;
 }
 
 .features b {
   display: block;
+  margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
   width: 155px;
@@ -286,13 +292,18 @@ b {
 
 .features p {
   width: 155px;
+  margin-bottom: 21px;
   margin-left: auto;
   margin-right: auto;
 }
 
+.features-item:nth-child(2) p {
+  width: 140px;
+}
+
 .question {
   display: block;
-  margin-bottom: 34px;
+  margin-bottom: 32px;
   font-size: 30px;
 }
 
@@ -300,7 +311,7 @@ b {
   width: 460px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   line-height: 24px;
 }
 
@@ -315,26 +326,37 @@ b {
 .form-search-title {
   width: 568px;
   margin-bottom: 55px;
-  padding: 34px;
+  padding: 30px;
   font-size: 21px;
   line-height: 26px;
   
+  letter-spacing: -1.25pt;
+  word-spacing: -0.6pt;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #766357;
+  border: none;
 }
 
 .search label {
   display: inline-block;
   min-width: 95px;
   
-  margin-left: 56px;
-  margin-top: 9px;
+  margin-left: 55px;
+  margin-top: 6px;
   text-align: left;
   line-height: 26px;
   font-size: 14px;
   font-weight: 700;
+}
+
+.arrivals {
+  margin-left: 2px;
+}
+
+.departure {
+  margin-left: 2px;
 }
 
 .calend {
@@ -407,7 +429,7 @@ b {
 }
 
 .search input {
-  width: 294px;
+  width: 290px;
   height: 20px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
@@ -417,6 +439,7 @@ b {
   font-weight: 700;
   padding: 7px 12px;
   padding-right: 40px;
+  margin-left: 11px;
   margin-bottom: 29px;
 }
 
