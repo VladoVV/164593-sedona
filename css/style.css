@@ -521,6 +521,471 @@ input.id-children {
   margin-top: -426px;
 }
 
+
+.filter {
+  top: 60px;
+  padding-top: 30px;
+  color: #ffffff;
+  background-color: darkslategrey;
+  background-image: url(../img/background-filter.png);
+}
+
+.filter b {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 24px;
+  margin-top: -3px;
+}
+
+.filter-left {
+  float: left;
+  width: 160px;
+  margin-left: 45px; 
+}
+
+.checkbox {
+  display: block;
+  position: relative;
+  height: 22px;
+  
+  margin-bottom: 24px;
+  padding-left: 40px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox input[type="checkbox"]  + .checkbox-indicator {
+  position: absolute;
+  display: block;
+  top: 0px;
+  left: -1px;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url(../img/sprite2.png);
+  background-position: -128px -37px;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -1px;
+  
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/sprite2.png);
+  background-position: -160px -37px;
+}
+
+/* вопрос как указать свойства checkbox disabled (из стайлгайда) с галочкой и без галочки? */
+
+.filter-left,
+.filter-center,
+.filter-right {
+  font-size: 0;
+}
+
+main label {
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.filter-center {
+  float: left; 
+  width: 153px;
+  margin-left: 80px; 
+  margin-top: 1px;
+}
+
+.filter-center label {
+  margin-left: 1px;
+}
+
+.filter-right {
+  float: right;
+  width: 225px;
+  margin-right: 46px;
+  margin-bottom: 33px;
+}
+.filter-right .filter-text {
+  margin-bottom: 10px;
+  line-height: 21px;
+  margin-left: 4px;
+}
+
+.price-controls {
+  position: relative;
+  height: 33px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  margin-bottom: 19px;
+  font-size: 0;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  
+  background: #ffffff;
+}
+
+.filter-right label {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding-left: 36px;
+  line-height: 33px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+label.price-to {
+  padding-left: 22px;
+}
+
+.price-controls input {
+  margin: 0px;
+  margin-top: -2px;
+  background: none;
+  border: none;
+  outline: none;
+  color: inherit;
+  font: inherit;  
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.scale { 
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-left: 5px;
+}
+
+.bar {
+  height: 2px;
+  width: 160px;
+  background-color: #ffffff;
+}
+
+.range-switch {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-switch:hover {
+  background-color: #1c4f80;
+}
+
+.range-swith-min {
+  top: -9px;
+  left: 5px;
+}
+
+.range-switch-max {
+  top: -9px;
+  left: 72%;
+}
+
+.filter-right button {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 30px 6px 32px;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background: none;
+  cursor: pointer;
+}
+
+.filter-right button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.filter-text {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.filter input {
+  width: auto;
+}
+
+.filter-right input {
+  width: 60%;
+}
+
+form {
+  margin-bottom: 29px;
+}
+
+.wrap-result-filtr {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.wrap-result-filtr b {
+  float: left;
+  margin-left: 46px;
+  margin-right: 50px;
+  line-height: 26px;
+  word-spacing: 
+}
+
+.wrap-result-filtr p {
+  float: left;
+  margin: 0;
+  padding-top: 6px;
+  margin-left: -3px;
+  margin-right: 43px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.wrap-result-filtr ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+}
+
+.wrap-result li {
+  float: left;
+  margin-right: 23px;
+  font-size: 12px;
+  line-height: 18px;
+  list-style: none;
+}
+
+.wrap-result li a {
+  color: #000000;
+  
+  border-bottom: 1px dashed #000000;
+}
+
+.wrap-result li a.active {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.wrap-result li a.active:hover {
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.wrap-result li a.condition {
+  opacity: 0.3;
+}
+
+.wrap-result a {
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.arrowup::before {
+  content: "";
+  display: inline-block;
+  border-bottom: 10px solid #cccccc;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin-top: 10px;
+  position: absolute;
+  right: 69px;
+}
+
+.arrowup:hover::before {
+  border-bottom: 10px solid #000000;
+}
+
+/* вопрос как записывать arrow active no hovers  так: */
+.arrowup.active::before {
+  border-bottom: 10px solid #81b3d2;
+}
+
+.arrowup:active::before {
+  border-bottom: 10px solid #81b3d2;
+}
+
+.arrowdown::before {
+  content: " ";
+  display: inline-block;
+  border-top: 10px solid #81b3d2;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  margin-top: 9px;
+  position: absolute;
+  right: 46px; 
+}
+/* вопрос как записывать arrow active no hovers  так: */
+.arrowdown.active::before {
+  border-top: 10px solid #81b3d2;
+}
+
+.arrowdown:hover::before {
+  border-top: 10px solid #000000;
+}
+
+.arrowdown:active::before {
+  border-top: 10px solid #81b3d2;
+}
+/* ??? как правильно селектор задать для .active no hovers   */
+.arrowdown::before .activenohovers  {
+  border-top: 10px solid #81b3d2;
+}
+
+hr {
+  border: 1px solid #e5e5e5;
+}
+article {
+  padding-top: 22px;
+  padding-left: 46px;
+  text-align: left;
+  margin-bottom: 29px; 
+} 
+
+.result-img {
+  display: inline-block;
+  width: 136px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.center-side {
+  display: inline-block;
+  width: 390px;
+  margin-right: 30px;
+  margin-left: -4px;
+}
+
+h2.result-title {
+  margin: 0;
+  padding: 0;
+}
+
+h2.result-title a{
+  display: block;
+  text-align: left;
+  margin-top: -5px;
+  margin-left: 30px;
+  margin-bottom: 7px;
+  color: #000000;
+}
+
+h2.result-title a:hover {
+  color: #81b3d2;
+}
+
+h2.result-title a:active {
+  color: #cacaca;
+}
+
+.center-side p {
+  display: inline-block;
+  margin: 0;
+  margin-left: 30px;
+  min-width: 110px;
+  margin-bottom: 17px;
+}
+
+.center-side p:nth-child(3) {
+  margin-left: 2px;
+  margin-right: 30px;
+}
+
+.btn-more {
+  margin-left: 30px;
+  padding: 4px 16px 5px 16px;
+  background: #81b3d2;
+  font-weight: 700;
+  letter-spacing: 0.1pt;
+  color: #ffffff;
+}
+
+.btn-more:hover {
+  background-color: #669ec0;
+}
+
+.btn-more:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+.center-side a {
+  margin-right: 0;
+}
+
+.btn-book {
+  margin-left: 3px;
+  padding: 4px 16px 5px 16px;
+  background: #766357;
+  font-weight: 700;
+  letter-spacing: 0.1pt;
+  color: #ffffff;
+}
+
+.btn-book:hover {
+  background-color: #604e43;
+}
+
+.btn-book:active {
+  background-color: #503e33;
+  color: #7e7169;
+}
+
+.right-side {
+  display: inline-block;
+  vertical-align: top;
+  padding-bottom: px;
+  text-align: right;
+  margin-left: 3px;
+  width: 115px;
+  
+}
+
+img.rating-img {
+  display: inline-block;
+  margin-top: -1px;
+  margin-right: 1px;
+  margin-bottom: 39px;
+  margin-left: 6px;
+}
+
+p.rating {
+  display: inline-block;
+  margin: 0;
+  margin-top: 3px;
+  
+  padding: 2px 13px 4px 13px;
+  letter-spacing: 0.1pt;
+  background-color: #f2f2f2;
+}
+
 .main-footer {
   position: relative;
   z-index: 1;
@@ -532,6 +997,10 @@ input.id-children {
 
 .footer-index {
   margin-top: -126px;
+}
+
+.footer-inner {
+  margin-top: -8px;
 }
 
 .tag {
@@ -658,437 +1127,3 @@ input.id-children {
   margin-right: 0px;
 }
 
-.filter {
-  top: 60px;
-  padding-top: 30px;
-  color: #ffffff;
-  background-color: darkslategrey;
-  background-image: url(../img/background-filter.png);
-}
-
-.filter b {
-  font-size: 16px;
-  color: #ffffff;
-  text-align: left;
-  margin-bottom: 29px;
-}
-
-.filter-left {
-  float: left;
-  width: 160px;
-  margin-left: 46px; 
-}
-
-.checkbox {
-  display: block;
-  position: relative;
-  height: 22px;
-  vertical-align: top;
-  margin-bottom: 24px;
-  padding-left: 40px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.checkbox input[type="checkbox"] {
-  display: none;
-}
-
-.checkbox input[type="checkbox"]  + .checkbox-indicator {
-  position: absolute;
-  display: block;
-  top: 0px;
-  left: 0px;
-
-  width: 23px;
-  height: 23px;
-
-  background-image: url(../img/sprite2.png);
-  background-position: -128px -37px;
-}
-
-.checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  
-  width: 27px;
-  height: 23px;
-
-  background-image: url(../img/sprite2.png);
-  background-position: -160px -37px;
-}
-
-/* вопрос как указать свойства checkbox disabled (из стайлгайда) с галочкой и без галочки? */
-
-.filter-left,
-.filter-center,
-.filter-right {
-  font-size: 0;
-}
-
-main label {
-  vertical-align: top;
-  font-size: 14px;
-}
-
-.filter-center {
-  float: left; 
-  width: 153px;
-  margin-left: 79px; 
-}
-
-.filter-right {
-  float: right;
-  width: 225px;
-  margin-right: 46px;
-  margin-bottom: 33px;
-}
-.filter-right .filter-text {
-  margin-bottom: 12px;
-  line-height: 21px
-}
-
-.price-controls {
-  position: relative;
-  height: 36px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  margin-bottom: 20px;
-  font-size: 0;
-}
-
-.price-controls::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 2px;
-  height: 22px;
-  
-  background: #ffffff;
-}
-
-.filter-right label {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  padding-left: 34px;
-  line-height: 36px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
-
-.price-controls input {
-  margin: 0px;
-  margin-top: -2px;
-  background: none;
-  border: none;
-  outline: none;
-  color: inherit;
-  font: inherit;  
-}
-
-.range-controls {
-  position: relative;
-  margin-bottom: 32px;
-}
-
-.scale { 
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.bar {
-  height: 2px;
-  width: 160px;
-  background-color: #ffffff;
-}
-
-.range-switch {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  background-color: #ababab;
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
-}
-
-.range-switch:hover {
-  background-color: #1c4f80;
-}
-
-.range-swith-min {
-  top: -9px;
-}
-
-.range-switch-max {
-  top: -9px;
-  left: 70%;
-}
-
-.filter-right button {
-  display: block;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 21px;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 8px 34px;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  background: none;
-  cursor: pointer;
-}
-
-.filter-right button:hover {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-form {
-  margin-bottom: 30px;
-}
-
-.wrap-result-filtr {
-  position: relative;
-  margin-bottom: 34px;
-}
-
-.wrap-result-filtr b {
-  float: left;
-  margin-left: 46px;
-  margin-right: 50px;
-  line-height: 26px;
-}
-
-.wrap-result-filtr p {
-  float: left;
-  margin: 0;
-  padding-top: 5px;
-  margin-right: 35px;
-  font-size: 12px;
-  line-height: 18px;
-}
-
-.wrap-result-filtr ul {
-  float: left;
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
-}
-
-.wrap-result li {
-  float: left;
-  margin-right: 30px;
-  font-size: 12px;
-  line-height: 18px;
-  list-style: none;
-}
-
-.wrap-result li a {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.wrap-result li a.active {
-  color: #81b3d2;
-  text-decoration: none;
-}
-
-.wrap-result li a.active:hover {
-  color: #81b3d2;
-  text-decoration: underline;
-}
-
-.wrap-result li a.condition {
-  opacity: 0.3;
-}
-
-.wrap-result a {
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.arrowup::before {
-  content: "";
-  display: inline-block;
-  border-bottom: 10px solid #cccccc;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  margin-top: 8px;
-  position: absolute;
-  right: 70px;
-}
-
-.arrowup:hover::before {
-  border-bottom: 10px solid #000000;
-}
-
-/* вопрос как записывать arrow active no hovers  так: */
-.arrowup.active::before {
-  border-bottom: 10px solid #81b3d2;
-}
-
-.arrowup:active::before {
-  border-bottom: 10px solid #81b3d2;
-}
-
-.arrowdown::before {
-  content: " ";
-  display: inline-block;
-  border-top: 10px solid #81b3d2;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  margin-top: 8px;
-  position: absolute;
-  right: 46px; 
-}
-/* вопрос как записывать arrow active no hovers  так: */
-.arrowdown.active::before {
-  border-top: 10px solid #81b3d2;
-}
-
-.arrowdown:hover::before {
-  border-top: 10px solid #000000;
-}
-
-.arrowdown:active::before {
-  border-top: 10px solid #81b3d2;
-}
-/* ??? как правильно селектор задать для .active no hovers   */
-.arrowdown::before .activenohovers  {
-  border-top: 10px solid #81b3d2;
-}
-
-article {
-  padding-top: 30px;
-  padding-left: 46px;
-  text-align: left;
-  margin-bottom: 30px; 
-} 
-
-.result-img {
-  display: inline-block;
-  width: 136px;
-  text-align: left;
-  vertical-align: top;
-}
-
-.center-side {
-  display: inline-block;
-  width: 390px;
-  margin-right: 30px;
-}
-
-h2.result-title {
-  margin: 0;
-  padding: 0;
-}
-
-h2.result-title a{
-  display: block;
-  text-align: left;
-  margin-top: -5px;
-  margin-left: 30px;
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-h2.result-title a:hover {
-  color: #81b3d2;
-}
-
-h2.result-title a:active {
-  color: #cacaca;
-}
-
-.center-side p {
-  display: inline-block;
-  margin: 0;
-  margin-left: 30px;
-  min-width: 110px;
-  margin-bottom: 16px;
-}
-
-.center-side p:nth-child(3) {
-  margin-left: 0px;
-  margin-right: 30px;
-}
-
-.btn-more {
-  margin-left: 30px;
-  padding: 6px 16px;
-  background: #81b3d2;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.btn-more:hover {
-  background-color: #669ec0;
-}
-
-.btn-more:active {
-  background-color: #5496bd;
-  color: #88b6d1;
-}
-
-.center-side a {
-  margin-right: 0;
-}
-
-.btn-book {
-  margin-left: 0px;
-  padding: 6px 16px;
-  background: #766357;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-.btn-book:hover {
-  background-color: #604e43;
-}
-
-.btn-book:active {
-  background-color: #503e33;
-  color: #7e7169;
-}
-
-.right-side {
-  display: inline-block;
-  vertical-align: top;
-  text-align: right;
-  
-  width: 115px;
-}
-
-img.rating-img {
-  display: inline-block;
-  margin-left: 7px;
-  margin-bottom: 39px;
-}
-
-p.rating {
-  display: inline-block;
-  margin: 0;
-  padding: 6px 16px 6px 13px;
-  background-color: #f2f2f2;
-}
-
-.filter-text {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.filter input {
-  width: auto;
-}
-
-.filter-right input {
-  width: 60%;
-}
