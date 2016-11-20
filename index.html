@@ -176,15 +176,12 @@
     
     var storageAdults = localStorage.getItem("adults");
     var storageChildren = localStorage.getItem("children");
-    
-    form.addEventListener("DOMContentLoaded", function(event){
-      event.preventDefault();
-      popupForm.classList.add("search");
-    });
+        
+    popupForm.classList.add("search");
     
     buttonLink.addEventListener("click", function(event) {
       event.preventDefault();
-      popupForm.classList.add("form-content-show");
+      popupForm.classList.toggle("form-content-show");
       dateArrival.focus();
     });
     
