@@ -326,6 +326,7 @@ b {
   margin: 0 auto;
   /*background-color: #ffffff;*/
   
+  
 }
 
 .form-search-title {
@@ -504,9 +505,10 @@ input.id-children {
 }
 
 .submit {
+  display: inline-block;
   padding: 17px 195px 17px;
   margin-right: 0px;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 56px;
   background-color: #81b3d2;
   color: #ffffff;
@@ -517,6 +519,10 @@ input.id-children {
   cursor: pointer;
   text-align: center;
   border: none;
+}
+
+a.submit {
+  text-decoration: none;
 }
 
 .submit:hover {
@@ -541,16 +547,16 @@ input.id-children {
 
 @keyframes animation-form {
   0%   {
-    transform: translateX(-1000px);
+    transform: translateY(-10%);
   }
   70%  {
-    transform: translateX(60px);
+    transform: translateY(101%);
   }
   90%  {
-    transform: translateX(-60px);
+    transform: translateY(-2%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0%);
   }
 }
 
@@ -1056,7 +1062,7 @@ p.rating {
 .tag p {
   margin-top: 0;
   padding-top: 48px;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 
 }
 
