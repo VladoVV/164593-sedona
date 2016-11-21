@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -163,45 +163,7 @@
           </p>
         </div>
     </footer>
-  <script>
-    var buttonLink = document.querySelector(".form-search-title");
-    
-    var popupForm = document.querySelector(".search");
-    var form = popupForm.querySelector("form");
-    
-    var dateArrival = popupForm.querySelector("[name=date-arrival]");
-    var dateDeparture = popupForm.querySelector("[name=date-departure]");
-    var adults = popupForm.querySelector("[name=adults]");
-    var children = popupForm.querySelector("[name=children]");
-    
-    var storageAdults = localStorage.getItem("adults");
-    var storageChildren = localStorage.getItem("children");
-        
-    popupForm.classList.add("search");
-    
-    buttonLink.addEventListener("click", function(event) {
-      event.preventDefault();
-      popupForm.classList.toggle("form-content-show");
-      dateArrival.focus();
-    });
-    
-    form.addEventListener("submit", function(event) {
-      if (!dateArrival.value || !dateDeparture.value || !adults.value || !children.value) {
-        event.preventDefault();
-        console.log("Заполните все поля");
-      } else {
-        localStorage.setItem("adults", adults.value);
-        localStorage.setItem("children", children.value);
-      }
-    });
-    
-    window.addEventListener("keydown", function(event) {
-      if (event.keyCode === 27) {
-        if (popupForm.classList.contains("form-content-show")) {
-          popupForm.classList.remove("form-content-show");
-        }
-      }
-    });
-  </script>  
+  
+  <script src="js/javascript.min.js"></script>
   </body>
 </html>
