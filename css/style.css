@@ -570,6 +570,7 @@ a.submit {
   z-index: -1;
   margin-top: 10px;
   background-color: #ddb787;
+  background-image: url(../img/map.jpg);
 }
 
 /*-----------------------inner.html filter-------------------------*/
