@@ -28,6 +28,8 @@ b {
   color: #000000;
 }
 
+/*-----------------------header-------------------------*/
+
 .main-header {
   position: relative;
   width: 768px;
@@ -108,6 +110,8 @@ b {
   text-align: center;
 }
 
+/*------------------------img background------------------------*/
+
 .triangle::before {
   content: "";
   position: absolute;
@@ -120,7 +124,10 @@ b {
 
 .img-background {
   margin-bottom: 50px;
+  background-color: darkcyan;
 }
+
+/*------------------------index-content------------------------*/
 
 .title {
   text-align: center;
@@ -316,17 +323,14 @@ b {
   line-height: 24px;
 }
 
+/*----------------------form search hotels--------------------------*/
+
 .form-search {
   position: absolute;
   left: 100px;
-  
-  /*position: relative;*/
   z-index: 1;
   width: 568px;
   margin: 0 auto;
-  /*background-color: #ffffff;*/
-  
-  
 }
 
 .form-search-title {
@@ -335,7 +339,6 @@ b {
   padding: 30px;
   font-size: 21px;
   line-height: 26px;
-  
   letter-spacing: -1.25pt;
   word-spacing: -0.6pt;
   font-weight: 700;
@@ -354,7 +357,6 @@ form {
 .search label {
   display: inline-block;
   min-width: 95px;
-  
   margin-left: 55px;
   margin-top: 6px;
   text-align: left;
@@ -375,9 +377,9 @@ form {
   position: absolute;
   top: 7px;
   right: 9px;
-  background-image: url(../img/sprite2.png);
   width: 21px;
   height: 22px;
+  background-image: url(../img/sprite2.png);
   background-position: -128px -5px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -396,11 +398,10 @@ form {
   top: 19px;
   left: 180px;
   display: block;
-  background-image: url(../img/sprite2.png);
   width: 12px;
   height: 3px;
+  background-image: url(../img/sprite2.png);
   background-position: -184px -85px;
-  
   cursor: pointer;
 }
 
@@ -417,9 +418,9 @@ form {
   top: 15px;
   left: 256px;
   display: block;
-  background-image: url(../img/sprite2.png);
   width: 11px;
   height: 11px;
+  background-image: url(../img/sprite2.png);
   background-position: -287px -111px;
   cursor: pointer;
 }
@@ -443,16 +444,16 @@ form {
 .search input {
   width: 290px;
   height: 20px;
+  margin-left: 11px;
+  margin-bottom: 29px;
+  padding: 7px 12px;
+  padding-right: 40px;
   background-color: #f2f2f2;
   border: 2px solid transparent;
   font: inherit;
   line-height: inherit;
   text-transform: inherit;
   font-weight: 700;
-  padding: 7px 12px;
-  padding-right: 40px;
-  margin-left: 11px;
-  margin-bottom: 29px;
 }
 
 .search input:hover {
@@ -482,11 +483,11 @@ form {
 }
 
 .child label  {
+  min-width: auto;
   margin-top: 7px;
   margin-left: 52px;
-  padding-left: 0px;
   margin-right: 8px;
-  min-width: auto;
+  padding-left: 0px;
 }
 
 .adults label {
@@ -506,10 +507,10 @@ input.id-children {
 
 .submit {
   display: inline-block;
-  padding: 17px 195px 17px;
   margin-right: 0px;
   margin-top: 0px;
   margin-bottom: 56px;
+  padding: 17px 195px 17px;
   background-color: #81b3d2;
   color: #ffffff;
   font-family: inherit;
@@ -534,23 +535,23 @@ a.submit {
   color: #88b6d1;
 }
 
-.search {
+/*-----------------------animation form-------------------------*/
+
+.js-form {
   display: none;
 }
 
 .form-content-show {
   display: block;
-  animation: animation-form 2s;
+  animation: animation-form 1.5s;
 }
-
-/* всплывающая форма */
 
 @keyframes animation-form {
   0%   {
     transform: translateY(-10%);
   }
   70%  {
-    transform: translateY(101%);
+    transform: translateY(30%);
   }
   90%  {
     transform: translateY(-2%);
@@ -560,15 +561,18 @@ a.submit {
   }
 }
 
+/*-------------------------map-----------------------*/
+
 .map {
   position: absolute;
-  bottom: -732px;
   left: 0;
-  margin-top: 10px;
+  bottom: -732px;
   z-index: -1;
-  /* margin-top: -426px; */
+  margin-top: 10px;
+  background-color: #ddb787;
 }
 
+/*-----------------------inner.html filter-------------------------*/
 
 .filter {
   top: 60px;
@@ -579,11 +583,11 @@ a.submit {
 }
 
 .filter b {
+  margin-top: -3px;
+  margin-bottom: 24px;
   font-size: 16px;
   color: #ffffff;
   text-align: left;
-  margin-bottom: 24px;
-  margin-top: -3px;
 }
 
 .filter-left {
@@ -596,7 +600,6 @@ a.submit {
   display: block;
   position: relative;
   height: 22px;
-  
   margin-bottom: 24px;
   padding-left: 40px;
   text-align: left;
@@ -609,13 +612,11 @@ a.submit {
 
 .checkbox input[type="checkbox"]  + .checkbox-indicator {
   position: absolute;
-  display: block;
   top: 0px;
   left: -1px;
-
+  display: block;
   width: 23px;
   height: 23px;
-
   background-image: url(../img/sprite2.png);
   background-position: -128px -37px;
 }
@@ -625,15 +626,11 @@ a.submit {
   position: absolute;
   top: 0px;
   left: -1px;
-  
   width: 27px;
   height: 23px;
-
   background-image: url(../img/sprite2.png);
   background-position: -160px -37px;
 }
-
-/* вопрос как указать свойства checkbox disabled (из стайлгайда) с галочкой и без галочки? */
 
 .filter-left,
 .filter-center,
@@ -663,18 +660,19 @@ main label {
   margin-right: 46px;
   margin-bottom: 33px;
 }
+
 .filter-right .filter-text {
   margin-bottom: 10px;
-  line-height: 21px;
   margin-left: 4px;
+  line-height: 21px;
 }
 
 .price-controls {
   position: relative;
   height: 33px;
+  margin-bottom: 19px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  margin-bottom: 19px;
   font-size: 0;
 }
 
@@ -683,10 +681,9 @@ main label {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 2px;
   height: 22px;
-  
+  transform: translate(-50%, -50%);
   background: #ffffff;
 }
 
@@ -721,8 +718,8 @@ label.price-to {
 
 .scale { 
   height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
   margin-left: 5px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .bar {
@@ -759,12 +756,12 @@ label.price-to {
 .filter-right button {
   display: block;
   margin: 0 auto;
+  padding: 6px 30px 6px 32px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 6px 30px 6px 32px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   background: none;
@@ -793,6 +790,8 @@ form {
   margin-bottom: 29px;
 }
 
+/*------------------------inner.html nav search result------------------------*/
+
 .wrap-result-filtr {
   position: relative;
   margin-bottom: 30px;
@@ -809,9 +808,9 @@ form {
 .wrap-result-filtr p {
   float: left;
   margin: 0;
-  padding-top: 6px;
   margin-left: -3px;
   margin-right: 43px;
+  padding-top: 6px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -833,7 +832,6 @@ form {
 
 .wrap-result li a {
   color: #000000;
-  
   border-bottom: 1px dashed #000000;
 }
 
@@ -858,20 +856,19 @@ form {
 
 .arrowup::before {
   content: "";
+  position: absolute;
+  right: 69px;
   display: inline-block;
+  margin-top: 10px;
   border-bottom: 10px solid #cccccc;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  margin-top: 10px;
-  position: absolute;
-  right: 69px;
 }
 
 .arrowup:hover::before {
   border-bottom: 10px solid #000000;
 }
 
-/* вопрос как записывать arrow active no hovers  так: */
 .arrowup.active::before {
   border-bottom: 10px solid #81b3d2;
 }
@@ -882,15 +879,15 @@ form {
 
 .arrowdown::before {
   content: " ";
+  position: absolute;
+  right: 46px; 
+  margin-top: 9px;
   display: inline-block;
   border-top: 10px solid #81b3d2;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  margin-top: 9px;
-  position: absolute;
-  right: 46px; 
 }
-/* вопрос как записывать arrow active no hovers  так: */
+
 .arrowdown.active::before {
   border-top: 10px solid #81b3d2;
 }
@@ -902,7 +899,7 @@ form {
 .arrowdown:active::before {
   border-top: 10px solid #81b3d2;
 }
-/* ??? как правильно селектор задать для .active no hovers   */
+
 .arrowdown::before .activenohovers  {
   border-top: 10px solid #81b3d2;
 }
@@ -910,11 +907,14 @@ form {
 hr {
   border: 1px solid #e5e5e5;
 }
+
+/*-----------------------search result-------------------------*/
+
 article {
+  margin-bottom: 29px;
   padding-top: 22px;
   padding-left: 46px;
   text-align: left;
-  margin-bottom: 29px; 
 } 
 
 .result-img {
@@ -938,10 +938,10 @@ h2.result-title {
 
 h2.result-title a{
   display: block;
-  text-align: left;
   margin-top: -5px;
   margin-left: 30px;
   margin-bottom: 7px;
+  text-align: left;
   color: #000000;
 }
 
@@ -955,9 +955,9 @@ h2.result-title a:active {
 
 .center-side p {
   display: inline-block;
+  min-width: 110px;
   margin: 0;
   margin-left: 30px;
-  min-width: 110px;
   margin-bottom: 17px;
 }
 
@@ -1008,12 +1008,10 @@ h2.result-title a:active {
 
 .right-side {
   display: inline-block;
-  vertical-align: top;
-  padding-bottom: px;
-  text-align: right;
-  margin-left: 3px;
   width: 115px;
-  
+  margin-left: 3px;
+  vertical-align: top;
+  text-align: right;  
 }
 
 img.rating-img {
@@ -1028,11 +1026,12 @@ p.rating {
   display: inline-block;
   margin: 0;
   margin-top: 3px;
-  
   padding: 2px 13px 4px 13px;
   letter-spacing: 0.1pt;
   background-color: #f2f2f2;
 }
+
+/*-------------------footer--------------------*/
 
 .main-footer {
   position: relative;
@@ -1045,7 +1044,6 @@ p.rating {
 
 .footer-index {
   margin-top: 606px;
-  /*margin-top: -126px;*/
 }
 
 .footer-inner {
@@ -1054,8 +1052,8 @@ p.rating {
 
 .tag {
   float: left;
-  text-align: center;
   width: 256px;
+  text-align: center;
   font-size: 21px;
 }
 
@@ -1063,7 +1061,6 @@ p.rating {
   margin-top: 0;
   padding-top: 48px;
   padding-bottom: 0px;
-
 }
 
 .copyright {
@@ -1073,14 +1070,15 @@ p.rating {
   padding-bottom: 40px;
   width: 256px;
 }
+
 .copyright a {
   margin-left: 4px;
 }
 
 .copyright p {
+  position: relative;
   margin: 0;
   margin-top: 1px;
-  position: relative;
   padding-left: 30px;
   padding-right: 20px;
 }
@@ -1117,15 +1115,14 @@ p.rating {
 }
 
 .social-btn {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 46px;
   height: 48px;
-  font-size: 14px;
-  background-color: #7FB1D0;
-  position: relative;
   margin-right: 6px;
-  
+  font-size: 14px;
+  background-color: #7FB1D0;  
 }
 
 .social-btn:nth-child(1) {
