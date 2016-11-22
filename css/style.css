@@ -524,7 +524,7 @@ input.id-children {
 .submit {
   display: inline-block;
   margin-right: 0px;
-  margin-top: 0px;
+  margin-top: 26px;
   margin-bottom: 56px;
   padding: 17px 195px 17px;
   background-color: #81b3d2;
@@ -584,8 +584,8 @@ a.submit {
   left: 0;
   bottom: -86px;
   z-index: 1;
-  /*background-color: #ddb787;
-  background-image: url(../img/map.jpg);*/
+  /*background-color: #ddb787;*/
+  background-image: url(../img/map.jpg);
 }
 
 /*-----------------------inner.html filter-------------------------*/
