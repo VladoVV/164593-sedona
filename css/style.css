@@ -21,6 +21,7 @@ h2 {
   line-height: 26px;
   color: #000000;
 }
+
 b {
   font-weight: 700;
   font-size: 21px;
@@ -65,12 +66,15 @@ b {
 .main-navigation li:nth-child(1) {
   margin-left: 46px;
 }
+
 .main-navigation li:nth-child(2) {
   margin-left: 60px;
 }
+
 .main-navigation li:nth-child(3) {
   margin-left: 182px;
 }
+
 .main-navigation li:nth-child(4) {
   margin-left: 78px;
 }
@@ -130,7 +134,10 @@ b {
 }
 
 .img-background {
+  width: 768px;
+  height: 512px;
   margin-bottom: 50px;
+  background-image: url(../img/background-img.jpg);
   background-color: darkcyan;
 }
 
@@ -153,7 +160,7 @@ b {
 
 .left {
   float: left;
-  width: 33%;
+  width: 256px;
   min-height: 208px;
   padding-top: 47px;
   color: #ffffff;
@@ -188,7 +195,7 @@ b {
 
 .hints {
   font-size: 0px;
-  margin-bottom: 47px;  
+  margin-bottom: 47px;
 }
 
 .hint {
@@ -215,7 +222,7 @@ b {
   background: url("../img/hint2.png") no-repeat;
   width: 74px;
   min-height: 70px;
-  margin-bottom: 31px;  
+  margin-bottom: 31px;
 }
 
 .hint:nth-child(3)::before {
@@ -226,7 +233,7 @@ b {
   width: 64px;
   min-height: 76px;
   margin-top: -4px;
-  margin-bottom: 28px;  
+  margin-bottom: 28px;
 }
 
 .hint p {
@@ -267,7 +274,7 @@ b {
 
 .right p:nth-child(3) {
   margin-top: 21px;
-} 
+}
 
 .right b {
   display: block;
@@ -343,10 +350,9 @@ b {
   width: 568px;
   margin-bottom: 0px;
   padding: 30px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
-  letter-spacing: -1.25pt;
-  word-spacing: -0.6pt;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
@@ -498,7 +504,7 @@ form.search {
   position: relative;
 }
 
-.child label  {
+.child label {
   min-width: auto;
   margin-top: 7px;
   margin-left: 52px;
@@ -518,7 +524,6 @@ input.id-adult {
 input.id-children {
   width: 35px;
   margin-left: 14px;
-  
 }
 
 .submit {
@@ -563,15 +568,18 @@ a.submit {
 }
 
 @keyframes animation-form {
-  0%   {
+  0% {
     transform: translateY(-10%);
   }
-  70%  {
+
+  70% {
     transform: translateY(30%);
   }
-  90%  {
+
+  90% {
     transform: translateY(-2%);
   }
+
   100% {
     transform: translateY(0%);
   }
@@ -583,6 +591,9 @@ a.submit {
   position: relative;
   left: 0;
   z-index: -1;
+  width: 768px;
+  height: 593px;
+  border: 0;
   background-color: #ddb787;
   background-image: url(../img/map.jpg);
   margin-top: 0px;
@@ -609,7 +620,7 @@ a.submit {
 .filter-left {
   float: left;
   width: 160px;
-  margin-left: 45px; 
+  margin-left: 45px;
 }
 
 .checkbox {
@@ -648,7 +659,7 @@ a.submit {
   background-position: -160px -37px;
 }
 
-.checkbox input[type="checkbox"]:disabled + .checkbox-indicator{
+.checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
   content: "";
   position: absolute;
   top: 0px;
@@ -659,7 +670,7 @@ a.submit {
   background-position: -196px -37px;
 }
 
-.checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::before{
+.checkbox input[type="checkbox"]:checked:disabled + .checkbox-indicator::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -683,9 +694,9 @@ main label {
 }
 
 .filter-center {
-  float: left; 
+  float: left;
   width: 153px;
-  margin-left: 80px; 
+  margin-left: 80px;
   margin-top: 1px;
 }
 
@@ -747,7 +758,7 @@ label.price-to {
   border: none;
   outline: none;
   color: inherit;
-  font: inherit;  
+  font: inherit;
 }
 
 .range-controls {
@@ -755,7 +766,7 @@ label.price-to {
   margin-bottom: 32px;
 }
 
-.scale { 
+.scale {
   height: 2px;
   margin-left: 5px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -795,7 +806,8 @@ label.price-to {
 .filter-right button {
   display: block;
   margin: 0 auto;
-  padding: 6px 30px 6px 32px;
+  padding: 6px 32px 6px 35px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -834,6 +846,8 @@ form {
 .wrap-result-filtr {
   position: relative;
   margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .wrap-result-filtr b {
@@ -841,8 +855,7 @@ form {
   margin-left: 46px;
   margin-right: 50px;
   line-height: 26px;
-  word-spacing: 
-}
+  word-spacing: }
 
 .wrap-result-filtr p {
   float: left;
@@ -923,7 +936,7 @@ a.condition:hover {
 .arrowdown::before {
   content: " ";
   position: absolute;
-  right: 46px; 
+  right: 46px;
   margin-top: 9px;
   display: inline-block;
   border-top: 10px solid #81b3d2;
@@ -939,22 +952,23 @@ a.condition:hover {
   border-top: 10px solid #81b3d2;
 }
 
-.arrowdown::before .activenohovers  {
+.arrowdown::before .activenohovers {
   border-top: 10px solid #81b3d2;
-}
-
-hr {
-  border: 1px solid #e5e5e5;
 }
 
 /*-----------------------search result-------------------------*/
 
+.result {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 article {
-  margin-bottom: 29px;
-  padding-top: 22px;
+  margin-bottom: 30px;
+  padding-top: 0px;
+  padding-bottom: 29px;
   padding-left: 46px;
   text-align: left;
-} 
+}
 
 .result-img {
   display: inline-block;
@@ -975,7 +989,7 @@ h2.result-title {
   padding: 0;
 }
 
-h2.result-title a{
+h2.result-title a {
   display: block;
   margin-top: -5px;
   margin-left: 30px;
@@ -1050,7 +1064,7 @@ h2.result-title a:active {
   width: 115px;
   margin-left: 3px;
   vertical-align: top;
-  text-align: right;  
+  text-align: right;
 }
 
 .rating-img {
@@ -1059,7 +1073,6 @@ h2.result-title a:active {
   margin-right: 1px;
   margin-bottom: 39px;
   margin-left: 2px;
-  
 }
 
 .star {
@@ -1072,7 +1085,7 @@ h2.result-title a:active {
 }
 
 .one-star {
-  width: 24px
+  width: 24px;
 }
 
 .two-stars {
@@ -1106,18 +1119,19 @@ p.rating {
   width: 768px;
   min-height: 120px;
   margin: 0 auto;
-  margin-top: -126px;
+  margin-top: -120px;
   background: rgba(255, 255, 255, 0.9);
 }
 
 .footer-inner {
-  margin-top: -8px;
+  margin-top: -30px;
 }
 
 .tag {
   float: left;
   width: 256px;
   text-align: center;
+  font-weight: 700;
   font-size: 21px;
 }
 
@@ -1186,7 +1200,7 @@ p.rating {
   height: 48px;
   margin-right: 6px;
   font-size: 14px;
-  background-color: #7FB1D0;  
+  background-color: #7FB1D0;
 }
 
 .social-btn:nth-child(1) {
