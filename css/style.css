@@ -80,7 +80,7 @@ b {
   margin-left: 78px;
 }
 
-.main-navigation li a {
+.main-navigation a {
   padding: 0px;
   font-weight: 700;
   line-height: 26px;
@@ -88,11 +88,11 @@ b {
   text-decoration: none;
 }
 
-.main-navigation li a:hover {
+.main-navigation a:hover {
   color: #81b3d2;
 }
 
-.main-navigation li a:active {
+.main-navigation a:active {
   color: #b2b2b2;
 }
 
@@ -490,8 +490,8 @@ form.search {
   min-height: 20px;
 }
 
-.search .adults input,
-.search .child input {
+.adults input,
+.child input {
   margin-top: 1px;
   padding-left: 38px;
   padding-right: 38px;
@@ -811,6 +811,10 @@ label.price-to {
   left: 72%;
 }
 
+a.show {
+  text-decoration: none;
+}
+
 .filter-right button {
   display: block;
   margin: 0 auto;
@@ -890,17 +894,17 @@ form {
   list-style: none;
 }
 
-.wrap-result li a {
+.wrap-result-filtr a {
   color: #000000;
   border-bottom: 1px dashed #000000;
 }
 
-.wrap-result li a.active {
+.wrap-result-filtr a.active {
   color: #81b3d2;
   border-bottom: none;
 }
 
-.wrap-result li a.active:hover {
+.wrap-result-filtr a.active:hover {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -1000,7 +1004,7 @@ h2.result-title {
   padding: 0;
 }
 
-h2.result-title a {
+.result-title a {
   display: block;
   margin-top: -5px;
   margin-left: 30px;
@@ -1009,11 +1013,11 @@ h2.result-title a {
   color: #000000;
 }
 
-h2.result-title a:hover {
+.result-title a:hover {
   color: #81b3d2;
 }
 
-h2.result-title a:active {
+.result-title a:active {
   color: #cacaca;
 }
 
