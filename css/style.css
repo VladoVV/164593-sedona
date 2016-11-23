@@ -52,6 +52,7 @@ b {
 .main-navigation ul,
 .main-navigation li {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -136,7 +137,7 @@ b {
 .img-background {
   width: 768px;
   height: 512px;
-  margin-bottom: 50px;
+  margin-bottom: 56px;
   background-image: url(../img/background-img.jpg);
   background-color: darkcyan;
 }
@@ -173,7 +174,7 @@ b {
   margin-right: auto;
 }
 
-.left p:nth-child(3) {
+.left .left-par {
   width: 186px;
   margin-top: 21px;
   margin-left: auto;
@@ -199,10 +200,10 @@ b {
 }
 
 .hint {
-  font-size: 0px;
   display: inline-block;
-  width: 256px;
   vertical-align: top;
+  width: 256px;
+  font-size: 0px;
 }
 
 .hint:nth-child(1)::before {
@@ -218,22 +219,22 @@ b {
 .hint:nth-child(2)::before {
   content: "";
   display: block;
-  margin: 0 auto;
-  background: url("../img/hint2.png") no-repeat;
   width: 74px;
   min-height: 70px;
+  margin: 0 auto;
   margin-bottom: 31px;
+  background: url("../img/hint2.png") no-repeat;
 }
 
 .hint:nth-child(3)::before {
   content: "";
   display: block;
-  margin: 0 auto;
-  background: url("../img/hint3.png") no-repeat;
   width: 64px;
   min-height: 76px;
+  margin: 0 auto;
   margin-top: -4px;
   margin-bottom: 28px;
+  background: url("../img/hint3.png") no-repeat;
 }
 
 .hint p {
@@ -272,7 +273,7 @@ b {
   margin-top: 23px;
 }
 
-.right p:nth-child(3) {
+.right .right-par {
   margin-top: 21px;
 }
 
@@ -298,8 +299,8 @@ b {
 
 .features-item {
   display: inline-block;
-  width: 256px;
   vertical-align: top;
+  width: 256px;
   padding-bottom: 17px;
   font-size: 14px;
 }
@@ -378,6 +379,7 @@ form.search {
 
 .search label {
   display: inline-block;
+  vertical-align: top;
   min-width: 95px;
   margin-left: 55px;
   margin-top: 6px;
@@ -528,6 +530,7 @@ input.id-children {
 
 .submit {
   display: inline-block;
+  vertical-align: top;
   margin-right: 0px;
   margin-top: 26px;
   margin-bottom: 56px;
@@ -564,24 +567,29 @@ a.submit {
 
 .form-content-show {
   display: block;
-  animation: animation-form 1.5s;
+  -webkit-animation: animation-form 1.5s;
+          animation: animation-form 1.5s;
 }
 
 @keyframes animation-form {
   0% {
-    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
   }
 
   70% {
-    transform: translateY(30%);
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
   }
 
   90% {
-    transform: translateY(-2%);
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
   }
 
   100% {
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -679,7 +687,6 @@ a.submit {
   height: 23px;
   background-image: url(../img/sprite2.png);
   background-position: -128px -69px;
-  border-color: fuchsia;
 }
 
 .filter-left,
@@ -733,7 +740,8 @@ main label {
   left: 50%;
   width: 2px;
   height: 22px;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background: #ffffff;
 }
 
@@ -915,6 +923,7 @@ a.condition:hover {
   position: absolute;
   right: 69px;
   display: inline-block;
+  vertical-align: top;
   margin-top: 10px;
   border-bottom: 10px solid #cccccc;
   border-left: 6px solid transparent;
@@ -972,6 +981,7 @@ article {
 
 .result-img {
   display: inline-block;
+  vertical-align: top;
   width: 136px;
   text-align: left;
   vertical-align: top;
@@ -979,6 +989,7 @@ article {
 
 .center-side {
   display: inline-block;
+  vertical-align: top;
   width: 390px;
   margin-right: 30px;
   margin-left: -4px;
@@ -1061,6 +1072,7 @@ h2.result-title a:active {
 
 .right-side {
   display: inline-block;
+  vertical-align: top;
   width: 115px;
   margin-left: 3px;
   vertical-align: top;
@@ -1069,6 +1081,7 @@ h2.result-title a:active {
 
 .rating-img {
   display: inline-block;
+  vertical-align: top;
   margin-top: -1px;
   margin-right: 1px;
   margin-bottom: 39px;
@@ -1078,10 +1091,12 @@ h2.result-title a:active {
 .star {
   position: absolute;
   right: 46px;
-  background-image: url(../img/rating.png);
-  background-repeat: repeat-x;
   width: 17px;
   height: 17px;
+  margin-top: -1px;
+  background-image: url(../img/rating.png);
+  background-repeat: repeat-x;
+  
 }
 
 .one-star {
@@ -1106,6 +1121,7 @@ h2.result-title a:active {
 
 p.rating {
   display: inline-block;
+  vertical-align: top;
   margin: 0;
   margin-top: 64px;
   padding: 2px 13px 4px 13px;
@@ -1220,7 +1236,8 @@ p.rating {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   background-image: url("../img/sprite2.png");
   background-repeat: no-repeat;
 }
