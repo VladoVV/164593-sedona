@@ -5,15 +5,12 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="shadow">
     <header class="main-header">
-      <a href="index.html">
-        <img class="small-logo" src="img/logo.png" width="138" height="70" alt="city sedona">
-      </a>
-      
+      <a href="index.html"><img class="small-logo" src="img/logo.png" width="138" height="70" alt="city sedona"></a>
       <nav class="main-navigation">
         <ul>
           <li>
@@ -31,11 +28,7 @@
         </ul>
       </nav>
     </header>
-    
     <main class="container">
-      
-
-      
       <form class="filter clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="filter-left">
           <b class="filter-text">инфраструктура</b>
@@ -49,7 +42,6 @@
             <input  type="checkbox" name="wi-fi" disabled><span class="checkbox-indicator"></span>wi-fi
           </label>
         </div> <!--end filter-left -->
-        
         <div class="filter-center">
           <b class="filter-text">тип жилья:</b>
           <label class="checkbox">          
@@ -62,7 +54,6 @@
             <input type="checkbox" name="apartments" disabled checked><span class="checkbox-indicator"></span>апартаменты
           </label>
         </div> <!--end filter-center -->
-        
         <div class="filter-right">
           <b class="filter-text">стоимость в сутки (р):</b>
           <div class="price-controls">
@@ -75,38 +66,35 @@
           </div>
           <div class="range-controls">
             <div class="scale">
-              <div class="bar">
-              </div>
+              <div class="bar"></div>
             </div>
             <div class="range-switch range-swith-min"></div>
             <div class="range-switch range-switch-max"></div>
           </div>
           <button class="btn" type="submit" >показать</button>  
-        </div> <!--end filter-right -->
-        
-        
+        </div> <!--end filter-right -->  
       </form>
       <div class="wrap-result">
         <div class="wrap-result-filtr clearfix">
         <b class="">найдено: 3</b>
         <p class="">сортировка</p>
         <ul>
-          <li><a class="active" href="#">по цене</a></li>
-          <li><a class="condition" href="#">по типу</a></li>
-          <li><a class="condition" href="#">по рейтингу</a></li>
+          <li>
+            <a class="active" href="#">по цене</a>
+          </li>
+          <li>
+            <a class="condition" href="#">по типу</a>
+          </li>
+          <li>
+            <a class="condition" href="#">по рейтингу</a>
+          </li>
         </ul>
-        
-        <a class="arrowup" href="#">
-        </a>
-        <a class="arrowdown activenohovers" href="#">
-        </a>
+        <a class="arrowup" href="#"></a>
+        <a class="arrowdown activenohovers" href="#"></a>
         </div>
-        <hr>
-        <div class="list-result">
-          
+        <div class="list-result">  
           <article class="result">
             <img class="result-img" src="img/result-img1.jpg" width="135" height="90" alt="first result">
-
             <div class="center-side">
               <h2 class="result-title"><a href="#">amara resort & spa</a></h2>
               <p>гостиница</p>
@@ -114,16 +102,13 @@
               <a class="btn-more" href="#">подробнее</a>
               <a class="btn-book" href="#">забронировать</a>
             </div>
-
             <div class="right-side">
               <span class="star four-stars"></span>
               <p class="rating">рейтинг: 8,5</p>
             </div>  
           </article>
-          <hr>
           <article class="result clearfix">
             <img class="result-img" src="img/result-img2.jpg" width="135" height="90" alt="second result">
-
             <div class="center-side">
               <h2 class="result-title"><a href="#">desert quail inn</a></h2>
               <p>мотель</p>
@@ -131,16 +116,13 @@
               <a class="btn-more" href="#">подробнее</a>
               <a class="btn-book" href="#">забронировать</a>
             </div>
-
             <div class="right-side">
               <span class="star two-stars"></span>
               <p class="rating">рейтинг: 8,9</p>
             </div>  
           </article>
-          <hr>
           <article class="result">
             <img class="result-img" src="img/result-img3.jpg" width="135" height="90" alt="third result">
-
             <div class="center-side">
               <h2 class="result-title"><a href="#">villas at poco diablo</a></h2>
               <p>апартаменты</p>
@@ -148,40 +130,25 @@
               <a class="btn-more" href="#">подробнее</a>
               <a class="btn-book" href="#">забронировать</a>
             </div>
-            
             <div class="right-side">
               <span class="star three-stars"></span>
               <p class="rating">рейтинг: 9,2</p>
             </div>  
           </article>
-        <hr>
         </div> <!--end list-result -->
       </div>
-     
     </main>
-    
     <footer class="main-footer footer-inner">
-      
         <div class="tag">
          <p>#visitsedona</p>
         </div>
         <div class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">
-            
-          </a>
-          <a class="social-btn social-btn-fb" href="#">
-            
-          </a>
-          <a class="social-btn social-btn-yt" href="#">
-            
-          </a>
+          <a class="social-btn social-btn-tw" href="#"></a>
+          <a class="social-btn social-btn-fb" href="#"></a>
+          <a class="social-btn social-btn-yt" href="#"></a>
         </div>
         <div class="copyright">
-          <p>website by
-            <a class="copylogo" href="https://htmlacademy.ru">
-              
-            </a>
-          </p>
+          <p>website by <a class="copylogo" href="https://htmlacademy.ru"></a></p>
         </div>
        <!-- end wrap-main-footer -->
     </footer>
