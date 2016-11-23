@@ -1053,18 +1053,48 @@ h2.result-title a:active {
   text-align: right;  
 }
 
-img.rating-img {
+.rating-img {
   display: inline-block;
   margin-top: -1px;
   margin-right: 1px;
   margin-bottom: 39px;
   margin-left: 2px;
+  
+}
+
+.star {
+  position: absolute;
+  right: 46px;
+  background-image: url(../img/rating.png);
+  background-repeat: repeat-x;
+  width: 17px;
+  height: 17px;
+}
+
+.one-star {
+  width: 24px
+}
+
+.two-stars {
+  width: 48px;
+}
+
+.three-stars {
+  width: 72px;
+}
+
+.four-stars {
+  width: 96px;
+}
+
+.five-stars {
+  width: 120px;
 }
 
 p.rating {
   display: inline-block;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 64px;
   padding: 2px 13px 4px 13px;
   letter-spacing: 0.1pt;
   background-color: #f2f2f2;
@@ -1076,12 +1106,12 @@ p.rating {
   width: 768px;
   min-height: 120px;
   margin: 0 auto;
-  margin-top: -120px;
+  margin-top: -126px;
   background: rgba(255, 255, 255, 0.9);
 }
 
 .footer-inner {
-  margin-top: 0px;
+  margin-top: -8px;
 }
 
 .tag {
