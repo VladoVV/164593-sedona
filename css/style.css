@@ -1,4 +1,16 @@
-body {
+.example {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}body {
   min-width: 768px;
   margin: 0;
   font-weight: 400;
@@ -348,7 +360,8 @@ b {
 }
 
 .form-search-title {
-  width: 568px;
+  display: block;
+  width: 508px;
   margin-bottom: 0px;
   padding: 30px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -360,6 +373,10 @@ b {
   background-color: #766357;
   border: none;
   cursor: pointer;
+}
+
+a.form-search-title {
+  text-decoration: none;
 }
 
 .form-search-title:hover {
@@ -532,7 +549,7 @@ input.id-children {
   display: inline-block;
   vertical-align: top;
   margin-right: 0px;
-  margin-top: 26px;
+  margin-top: 25px;
   margin-bottom: 56px;
   padding: 17px 195px 17px;
   background-color: #81b3d2;
@@ -569,6 +586,28 @@ a.submit {
   display: block;
   -webkit-animation: animation-form 1.5s;
           animation: animation-form 1.5s;
+}
+
+@-webkit-keyframes animation-form {
+  0% {
+    -webkit-transform: translateY(-10%);
+            transform: translateY(-10%);
+  }
+
+  70% {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+
+  90% {
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+  }
+
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 @keyframes animation-form {
