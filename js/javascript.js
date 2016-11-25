@@ -15,7 +15,7 @@ var form = document.querySelector(".search");
 
     buttonLink.addEventListener("click", function(event) {
             event.preventDefault();
-            popupForm.classList.add("form-content-show");
+            popupForm.classList.toggle("form-content-show");
             dateArrival.focus();
         });
 
