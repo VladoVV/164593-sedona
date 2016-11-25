@@ -57,7 +57,12 @@ b {
   z-index: 1;
 }
 
+.main-navigation {
+  padding: 0 6%;
+}
+
 .main-navigation ul {
+  width: 100%;
   font-size: 0;
 }
 
@@ -71,25 +76,27 @@ b {
 }
 
 .main-navigation li {
+  width: 20%;
   font-size: 14px;
   padding-top: 14px;
   padding-bottom: 16px;
 }
 
-.main-navigation li:nth-child(1) {
-  margin-left: 46px;
-}
-
-.main-navigation li:nth-child(2) {
-  margin-left: 60px;
-}
-
 .main-navigation li:nth-child(3) {
-  margin-left: 182px;
+  margin-left: 20%;
+}
+
+.main-navigation li:nth-child(1) {
+  text-align: left;
+}
+
+.main-navigation li:nth-child(2),
+.main-navigation li:nth-child(3) {
+  text-align: center;
 }
 
 .main-navigation li:nth-child(4) {
-  margin-left: 78px;
+  text-align: right;
 }
 
 .main-navigation a {
@@ -644,6 +651,12 @@ a.submit {
   background-color: #ddb787;
   background-image: url(../img/map.jpg);
   margin-top: 0px;
+}
+
+.map iframe { 
+  width: 768px; 
+  height: 593px; 
+  border: none; 
 }
 
 /*-----------------------inner.html filter-------------------------*/
