@@ -633,9 +633,6 @@ a.submit {
   position: relative;
   left: 0;
   z-index: -1;
-  width: 768px;
-  height: 593px;
-  border: 0;
   background-color: #ddb787;
   background-image: url(../img/map.jpg);
   margin-top: 0px;
